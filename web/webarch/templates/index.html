@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+显示数据<br>
+<ul>
+    {% for id,name,age in userlist %}
+    <li>{{loop.index}} {{id}},{{name}},{{age}}</li>
+    {% endfor %}
+</ul>
+总共{{usercount}}人
+</body>
+</html>
